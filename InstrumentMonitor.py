@@ -7,7 +7,7 @@ from sense_hat import SenseHat
 
 #THINGSPEAK INFO - TO BE INCLUDED LATER
 #THINGSPEAK_API_KEY = 'V2NZHXW8GI9T6ZKX'
-#TO_EMAIL = 'doireannocarroll1998@gmail.com'
+#TO_EMAIL = 'xxxxxxxxxxxx@gmail.com'
 
 #Colours for SenseHat
 BLUE = (0, 0, 255)
