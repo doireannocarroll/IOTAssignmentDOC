@@ -7,8 +7,6 @@ from sense_hat import SenseHat
 
 #THINGSPEAK INFO - TO BE INCLUDED LATER
 #THINGSPEAK_API_KEY = 'V2NZHXW8GI9T6ZKX'
-#EMAIL_ADDRESS = '20022107@setu.ie'
-#EMAIL_PASSWORD = 'EPDTQN9k3'
 #TO_EMAIL = 'doireannocarroll1998@gmail.com'
 
 #Colours for SenseHat
