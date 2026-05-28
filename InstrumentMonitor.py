@@ -3,7 +3,6 @@ import os
 import sys
 import time
 import requests
-import board
 import logging
 from urllib.parse import urlparse
 import paho.mqtt.client as mqtt
@@ -121,16 +120,16 @@ while True:
             f"Case Temp: {case_temperature:.1f} C | "
             f"Case Humidity: {case_humidity:.1f}%")
 
-        sense.show_message("T:{:.1f}C".format(room_temperature), text_colour=RED)
-        sense.show_message("H:{:.1f}%".format(room_humidity), text_colour=BLUE)
+        sense.show_message("T:{:.1f}C".format(case_temperature), text_colour=RED)
+        sense.show_message("H:{:.1f}%".format(case_humidity), text_colour=BLUE)
         send_to_thingspeak(case_temperature,case_humidity)
-        if (case_temperature_c < Temp_Min or
-            case_temperature_c > Temp_Max or
+        if (case_temperature < Temp_Min or
+            case_temperature > Temp_Max or
             case_humidity < Humidity_Min or
             case_humidity > Humidity_Max):
             send_alert(
-                viola_temperature_c,
-                viola_humidity
+                case_temperature,
+                case_humidity
         )
         time.sleep(15)
     except KeyboardInterrupt:
