@@ -43,7 +43,7 @@ Create a python environment (I called mine instrumentenv)
 Enter your personal details (Thingspeak Keys, email, password etc.) and copy the code over to your pi.
 
 
-To run the programme enter: python3 InstrumentMonitor.py mqtt://mqtt.3thingspeak.com:1883
+To run the programme enter: python InstrumentMonitor.py mqtt://mqtt.3thingspeak.com:1883
 
 
 REFERENCES
